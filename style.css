@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box; /*ensures that box doesn't enlarge when its content is edited */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: coral;
+
+}
+
+h2 {
+    text-align: center;
+}
+.app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 24px;
+    gap: 24px;
+}
+
+.notes {
+    height: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 7px black;
+    font-size: 17px;
+    animation: all gillie;
+    animation-duration: 0.25s;
+}
+
+@keyframes gillie {
+    0% {
+        transform: scale(0.9);
+        transition: ease 0.1s;
+        
+    }
+    50% {
+    }
+    100% {
+        
+    }
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}
+
+.add-notes {
+    height: 300px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.256);
+    font-size: 85px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+.add-notes:hover {
+    background-color: rgba(49, 48, 48, 0.556);
+    color: white;
+}
+
+.add-notes:active {
+    transform: scale(0.9);
+    transition: 0.25s;
+}
